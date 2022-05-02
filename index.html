@@ -5,53 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="simbolo.ico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Portfólio-OthonGonzaga</title>
 </head>
 <body>
-    <div class="container">
-        <header class="cabecalho">
-          <div class="perfil">
-            <img class="perfil-foto" src="https://github.com/othongonzaga.png"/>
-            <div class="titulo">
-              <h1>Othon Gonzaga</h1> 
-              <h3>Um Front-End Jr apaixonado por tecnologia.</h3>
+  <header>
+    <div>
+        <img class="perfil-foto" src="https://github.com/othongonzaga.png"/>
+        <h3>Lívia Nascimento</h3>
+    </div>
+    <ul>
+        <li>
+            <a target="_blank" href="https://github.com/othongonzaga">Github</a>    
+        </li>
+        <li>
+            <a target="_blank" href="https://linkedin.com/in/livnascimento">LinkedIn</a>
+        </li>
+        <li>
+            <a target="_blank" href="https://wa.me/5581994695671">WhatsApp</a>
+        </li>
+        <li>
+            <a target="_blank" href="mailto:othoncesargonzagabarbosa@gmail.com">E-mail</a>
+        </li>
+    </ul>
+    
+</header>
+<main>
+    <section id="container">
+        <div id="about-me">
+            <div id="name">
+                <h1>Oi, pode me chamar de Liv :)</h1>
+                <h4>Desenvolvedora JavaScript</h4>
             </div>
-          </div>
-          <div class="tema">
-            <button onClick="mudaModo()">Alterar tema</button>
-          </div>
-        </header>
-        <main class="portfolio">
-          <div class="projetos">
-            <ul>Projetos</ul>
-            <!-- <li>
-              <p>Calculadora</p>
-              <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWgppMM" data-user="imersao-dev" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/imersao-dev/pen/QWgppMM">
-        Calculadora de média</a> by Imersão Dev Alura (<a href="https://codepen.io/imersao-dev">@imersao-dev</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-            </li>
-            <li>
-              <p>Mentalista</p>
-              <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="vYgBwoj" data-user="imersao-dev" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/imersao-dev/pen/vYgBwoj">
-        Mentalista - Completo</a> by Imersão Dev Alura (<a href="https://codepen.io/imersao-dev">@imersao-dev</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-            </li> -->
-          </div>
-          <div class="conquistas">
-            <ul>Conquistas</ul>
-              <!-- <li><img src="https://media.discordapp.net/attachments/826504749561413662/876882280377897041/Aula_1_-_Media.png?width=461&height=461"></li>
-              <li><img src="https://media.discordapp.net/attachments/826504749561413662/876882993124372571/Aula_9_-_HTML_e_CSS.png?width=461&height=461"></li>
-              <li><img src="https://media.discordapp.net/attachments/826504749561413662/876883011268902962/Dia_2_-_Calculadora.png?width=425&height=425"></li> -->
-          </div>
-        </main>
-      </div>
-      <script src="index.js"></script>
+            <div id="plus">
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>
+            <div id="description">
+                <p>Sou apaixonada por tecnologia e na possibilidade de transformar a vida das pessoas que ela oferece. Meu principal objetivo como desenvolvedora é me tornar full-stack sênior antes dos 25 anos. Sou familiarizada com tecnologias como PHP, Python, Kotlin, JAVA, entre outras, mas meu xodó é o JavaScript. Também estou aprendendo TypeScript e UI/UX Design.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card tec">
+                <h3>Minhas tecnologias favoritas</h3>
+                <div>
+                    <i class="fa-brands fa-js-square"></i>JavaScript<br>
+                    <i class="fa-brands fa-html5"></i>HTML<br>
+                    <i class="fa-brands fa-css3"></i>CSS<br>
+                    <i class="fa-brands fa-python"></i>Python<br>
+                </div>
+            </div>
+            <div class="card project">
+                <div>
+                    <p>Esse botão aqui abaixo te leva direto pro meu projeto Front-End favorito. Por favor, não esquece de acessar o link de teste no README</p>
+                </div>
+                <a href="https://github.com/livnascimento/gamebox" target="_blank"><button>Ir para GameBox</button></a>  
+            </div>
+            <div class="card curriculum">
+                <div>
+                    <p>Quer saber mais sobre minhas experiências, formações e certificações? O botão abaixo te leva direto pro meu currículo, é só clicar.</p>
+                </div>
+                <a href="./assets/document/curriculo.pdf" target="_blank"><button>Ver Currículo</button></a>  
+            </div>
+        </div>
+        <div id="more-about-me">
+            <h2>Um pouco mais sobre mim</h2>
+            <div class="cards">
+                <div class="card info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <p>Caruaru - PE</p>
+                    </div>
+                </div>
+                <div class="card info">
+                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                        <p>Sou apaixonada por arte, animais, viagens e música</p>
+                    </div>
+                </div>
+                <div class="card info">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <div>
+                        <p>Meu maior objetivo profissional é participar de um projeto que atue diretamente em alguma pauta social e faça diferença na vida de alguém</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="form">
+            <form action="">
+                <p>Tá com pressa agora? Deixa que eu entro em contato com você!</p>
+                <input type="text" name="contato" id="contato" placeholder="email@exemplo.com">
+                <button>Enviar</button>
+            </form>
+        </div>
+    </section>
+</main>
+<script src="https://kit.fontawesome.com/5d8e5b5b4e.js" crossorigin="anonymous"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>
