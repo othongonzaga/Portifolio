@@ -166,6 +166,7 @@ a:hover{
 
 .card.info i{
     font-size: 50px;
+    cursor: auto;
 }
 
 #more-about-me h2{
