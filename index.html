@@ -1,102 +1,172 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="simbolo.ico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Portfólio OthonGonzaga</title>
-</head>
-<body>
-  <header>
-    <div>
-        <h3>Othon Gonzaga</h3>
-    </div>
-    <ul>
-        <li>
-            <a target="_blank" href="https://github.com/othongonzaga">Github</a>    
-        </li>
-        <li>
-            <a target="_blank" href="https://www.linkedin.com/in/othon-gonzaga-7bb4501a4/">LinkedIn</a>
-        </li>
-        <li>
-            <a target="_blank" href="https://wa.me/5581996437807">WhatsApp</a>
-        </li>
-        <li>
-            <a target="_blank" href="mailto:othoncesargonzagabarbosa@gmail.com">E-mail</a>
-        </li>
-    </ul>
-    
-</header>
-<main>
-    <section id="container">
-        <div id="about-me">
-            <div>
-                <img class="perfil-foto" src="/assets/images/profile.jpeg"/>
-            </div>
-            <div id="name">
-                <h1>Olá, sou Othon :)</h1>
-                <h4>Software Developer</h4>
-            </div>
-            <div id="plus">
-                <i class="fa-solid fa-circle-plus"></i>
-            </div>
-            <div id="description">
-                <h4> Um curioso, apaixonado por tecnologia e estou desde 2020 inserido na programação. Busco sempre estar melhorando e evoluindo cada vez mais. Meu objetivo, como desenvolvedor é me tornar full-stack sênior. Sou familiarizada com tecnologias como  C,C++, Python, JavaScript, HTML5, CSS3, React Js, Firebase, PHP, SQL, MySQL, Laravel.</h4>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="card tec">
-                <h3>Tecnologias que tenho mais experiência</h3>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="simbolo.ico.ico" type="image/x-icon">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio OthonGonzaga</title>
+    </head>
+    <body>
+        <header class="l-header">
+            <nav class="nav bd-grid">
                 <div>
-                    <i class="fa-brands fa-js-square"></i>JavaScript<br>
-                    <i class="fa-brands fa-html5"></i>HTML<br>
-                    <i class="fa-brands fa-css3"></i>CSS<br>
-                    <i class="fa-brands fa-php"></i>PHP                  
+                    <a href="#" class="nav__logo">OthonGonzaga</a>
                 </div>
-            </div>
-            <div class="card curriculum">
-                <div>
-                    <h4>Quer saber mais sobre minhas experiências, formações, projetos(meus projetos estão todos no GitHub e alguns publicados no Linkedin) e certificações? O botão abaixo te leva direto pro meu currículo, é só clicar.</h4>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Tecnologias</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projetos</a></li>
+                        <li class="nav__item"><a target="_blank" href="https://wa.me/5581996437807" class="nav__link">WhatsApp</a></li>
+                        <li class="nav__item"><a target="_blank" href="mailto:othoncesargonzagabarbosa@gmail.com" class="nav__link">E-mail</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contacte-me</a></li>
+                    </ul>
                 </div>
-                <a href="./assets/document/curriculo.pdf" target="_blank"><button>Ver Currículo</button></a>  
-            </div>
-        </div>
-        <div id="more-about-me">
-            <h2>Um pouco mais sobre mim</h2>
-            <div class="cards">
-                <div class="card info">
-                    <i class="fa-solid fa-location-dot"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Olá,<br>Eu sou <span class="home__title-color">Othon</span><br> Software Developer</h1>
+
+                    <a href="mailto:othoncesargonzagabarbosa@gmail.com" class="button">Contacte-me</a>
+                </div>
+
+                <div class="home__social">
+                    <a target="_blank" href="https://www.linkedin.com/in/othon-gonzaga-7bb4501a4/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a target="_blank" href="https://github.com/othongonzaga" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a target="_blank" href="https://wa.me/5581996437807" class="home__social-icon"><i class='bx bxl-whatsapp' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="0" href="assets/images/profile-semfundo.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <section class="about section " id="about">
+                <h2 class="section-title">Sobre</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/images/profile.jpeg" alt="">
+                    </div>
+                    
                     <div>
-                        <h4>Caruaru - PE</h4>
+                        <h2 class="about__subtitle">Olá, sou Othon :)</h2>
+                        <p class="about__text">Um curioso, apaixonado por tecnologia e estou desde 2020 inserido na programação. Busco sempre estar melhorando e evoluindo cada vez mais. Meu objetivo, como desenvolvedor é me tornar full-stack sênior. Sou familiarizada com tecnologias como  C,C++, Python, JavaScript, HTML5, CSS3, React Js, Firebase, PHP, SQL, MySQL, Laravel.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Tecnologias</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Tecnologias</h2>
+                        <p class="skills__text">Essas aqui são algumas das tecnologias que tenho mais experiência:</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-react skills__icon' ></i>
+                                <span class="skills__name">ReactJS</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-c-plus-plus skills__icon' ></i>
+                                <span class="skills__name">C++</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-php skills__icon' ></i>
+                                <span class="skills__name">PHP</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card info">
-                    <i class="fa-solid fa-heart"></i>
-                    <div>
-                        <h4>Sou apaixonado por futebol, tecnologia e música.</h4>
-                    </div>
+            </section>
+
+            <section class="work section" id="work">
+                <h2 class="section-title">Projetos</h2>
+
+                <div class="work__container bd-grid">
+                <a target="_blank" href="https://wa.me/5581996437807" class="footer__icon"><i class='bx bxl-whatsapp' ></i></a>
+                    <a  href="https://www.linkedin.com/feed/update/urn:li:activity:6935706270570061824/" class="work__img">
+                        <img src="assets/images/projeto1.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:6908543547885379584/" class="work__img">
+                        <img src="assets/images/projeto2.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:6930147793743282178/" class="work__img">
+                        <img src="assets/images/projeto3.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:6837029781440098304/" class="work__img">
+                        <img src="assets/images/projeto4.png" alt="">
+                    </a>
                 </div>
-                <div class="card info">
-                    <i class="fa-solid fa-bullseye"></i>
-                    <div>
-                        <h4>Um dos meus objetivos profissionais é participar de projetos de grande empresas e ser conhecido na área da tecnologia.</h4>
-                    </div>
+            </section>
+
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contacte-me</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <h4>Tá com pressa agora? Deixa que eu entro em contato com você!</h4>
+                        <input type="text" name="contato" id="contato" class="contact__input" placeholder="email@exemplo.com">
+                        <button class="contact__button button">Enviar</button>
+                    </form>
                 </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__title">Othon Gonzaga</p>
+            <div class="footer__social">
+                <a target="_blank" href="https://www.linkedin.com/in/othon-gonzaga-7bb4501a4/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a target="_blank" href="https://wa.me/5581996437807" class="footer__icon"><i class='bx bxl-whatsapp' ></i></a>
+                <a target="_blank" href="https://github.com/othongonzaga" class="footer__icon"><i class='bx bxl-github' ></i></a>
             </div>
-            
-        </div>
-        <div id="form">
-            <form action="">
-                <h4>Tá com pressa agora? Deixa que eu entro em contato com você!</h4>
-                <input type="text" name="contato" id="contato" placeholder="email@exemplo.com">
-                <button>Enviar</button>
-            </form>
-        </div>
-    </section>
-</main>
-<script src="https://kit.fontawesome.com/5d8e5b5b4e.js" crossorigin="anonymous"></script>
-<script src="./js/index.js"></script>
-</body>
+            <p class="footer__copy">&#169; OthonGonzaga. Todos os direitos reservado</p>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
