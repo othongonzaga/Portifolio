@@ -382,7 +382,34 @@ img{
   font-size: var(--smaller-font-size);
 }
 
-/* MEDIA QUERIES */
+/* Scroll Up */
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--first-color);
+  padding: .5rem;
+  display: flex;
+  opacity: .9;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+}
+
+.scrollup:hover{
+  background-color: var(--second-color);
+  opacity: 1;
+}
+
+.scrollup__icon{
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.show-scroll{
+  bottom: 5rem;
+}
+
+/* Responsividade */
 @media screen and (max-width: 320px){
   .home{
     row-gap: 2rem;

@@ -24,6 +24,13 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /* SCROLL SECTIONS ACTIVE LINK */
 const sections = document.querySelectorAll('section[id]')
 
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+    // Quando a rolagem for maior que 210 de altura da janela de visualização, adiciona a classe show-scroll à tag a com a classe scroll-up
+    if(this.scrollY > 210) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+
 function scrollActive(){
     const scrollY = window.pageYOffset
 
