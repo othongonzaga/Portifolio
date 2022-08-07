@@ -293,6 +293,10 @@ img{
   color: var(--first-color);
 }
 
+.img-icon{
+  margin-right: var(--mb-2);
+}
+
 .skills__names{
   display: flex;
   align-items: center;
